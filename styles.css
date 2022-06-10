@@ -33,6 +33,19 @@ body {
   border-radius: 20%;
 }
 
+.start{
+  margin: 10px;
+  padding-top: 10px;
+  width: 75px;
+  padding-bottom: 10px;
+  height: 25px;
+    border: 5px solid black;
+    border-radius: 25%;
+    background-color: #555555;
+    display: inline-block;
+}
+
+
 .game-over {
   background-color: red;
   opacity: 0.8;
