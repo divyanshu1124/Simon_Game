@@ -4,6 +4,13 @@ var userClickedPattern = [];
 
 var level = 0; 
 var start = false;
+$(".start").click(function(){
+    if(!start){
+        // $("#level-title").text("Level "+level);
+        nextSequence();
+        start= true;
+    }
+});
 $(document).keypress(function(){
     if(!start){
         // $("#level-title").text("Level "+level);
@@ -25,7 +32,7 @@ function nextSequence() {
 
     $("#"+randomChosenColor).fadeIn(100).fadeOut(100).fadeIn(100);
     playSound(randomChosenColor);
-    }, 3000);}
+    }, 2000);}
    
     else  {
         $("#level-title").html("Level "+level);
@@ -101,6 +108,12 @@ setTimeout(function(){
     $("#"+currentColor).removeClass("pressed");
 }, delayInMilliseconds);
 }
+
+
+
+
+
+
 
 
 
